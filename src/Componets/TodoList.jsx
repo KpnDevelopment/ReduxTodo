@@ -24,12 +24,13 @@ const TodoList = ({
   setItem,
   setEdit,
   deleteItem,
+  x,
 }) => {
   const [toDos, setToDos] = useState([]);
   const classes = useStyles();
-  let fetchtodos = JSON.parse(localStorage.getItem("reduxState"));
+  // let fetchtodos = JSON.parse(localStorage.getItem("reduxState"));
 
-  let todos = fetchtodos.todo.items;
+  // let todos = fetchtodos.todo.items;
 
   useEffect(() => {
     // console.log(todos);
